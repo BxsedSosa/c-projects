@@ -8,7 +8,8 @@ int main() {
     system("clear");
     time_t now = time(NULL);
     struct tm *local = localtime(&now);
-    printf("Time: %02d:%02d:%02d\n", local->tm_hour, local->tm_min,
+    printf("Date: %02d-%02d-%04d\nTime: %02d:%02d:%02d\n", local->tm_mon + 1,
+           local->tm_mday, local->tm_year + 1900, local->tm_hour, local->tm_min,
            local->tm_sec);
     sleep(1);
   }
