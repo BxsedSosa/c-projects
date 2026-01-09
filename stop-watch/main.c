@@ -4,7 +4,8 @@
 #include <time.h>
 #include <unistd.h>
 
-time_t stop_watch(char format[]) {
+time_t stop_watch() {
+  char format[] = "%02d:%02d:%02d\n";
   WINDOW *w;
   time_t saved_time = 0;
 
@@ -32,20 +33,23 @@ time_t stop_watch(char format[]) {
   return saved_time;
 }
 
-void save_time(time_t saved_time, char format[]) {
+void save_time(time_t saved_time) {
   FILE *fptr;
+  time_t now = time(NULL);
+  struct tm *local = localtime(&now);
   struct tm *filtered_time = localtime(&saved_time);
 
   fptr = fopen("timestamps.txt", "a");
-  fprintf(fptr, format, filtered_time->tm_hour - 16, filtered_time->tm_min,
+  fprintf(fptr, "Date: %02d-%02d-%04d Duration: %02d:%02d:%02d\n",
+          local->tm_mon - 10, local->tm_mday - 23, local->tm_year + 1957,
+          filtered_time->tm_hour - 16, filtered_time->tm_min,
           filtered_time->tm_sec);
   fclose(fptr);
   printf("Saved Time\n");
 }
 
 int main() {
-  char time_format[] = "%02d:%02d:%02d\n";
-  time_t saved_time = stop_watch(time_format);
-  save_time(saved_time, time_format);
+  time_t saved_time = stop_watch();
+  save_time(saved_time);
   return 0;
 }
