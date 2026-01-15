@@ -9,7 +9,8 @@ private:
   std::vector<Card> deck;
 
 public:
-  Deck();
+  Deck(int decks);
   void display_deck();
   void shuffle_deck();
+  int get_cards_left();
 };

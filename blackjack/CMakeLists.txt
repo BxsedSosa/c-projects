@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 4.2.1)
+project(Blackjack)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} includes)
+add_subdirectory(includes)
