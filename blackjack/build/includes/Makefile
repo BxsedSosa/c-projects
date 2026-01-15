@@ -185,6 +185,30 @@ Deck.cpp.s:
 	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Deck.cpp.s
 .PHONY : Deck.cpp.s
 
+Player.o: Player.cpp.o
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -201,6 +225,9 @@ help:
 	@echo "... Deck.o"
 	@echo "... Deck.i"
 	@echo "... Deck.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 .PHONY : help
 
 

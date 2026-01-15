@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/x/Workspace/c-projects/blackjack/includes/Card.cpp" "includes/CMakeFiles/includes.dir/Card.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Card.cpp.o.d"
   "/Users/x/Workspace/c-projects/blackjack/includes/Deck.cpp" "includes/CMakeFiles/includes.dir/Deck.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Deck.cpp.o.d"
+  "/Users/x/Workspace/c-projects/blackjack/includes/Player.cpp" "includes/CMakeFiles/includes.dir/Player.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Player.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -783,7 +783,8 @@ CMakeFiles/Blackjack.dir/main.cpp.o: /Users/x/Workspace/c-projects/blackjack/mai
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Card.h \
-  /Users/x/Workspace/c-projects/blackjack/includes/Deck.h
+  /Users/x/Workspace/c-projects/blackjack/includes/Deck.h \
+  /Users/x/Workspace/c-projects/blackjack/includes/Player.h
 
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
@@ -1467,6 +1468,8 @@ CMakeFiles/Blackjack.dir/main.cpp.o: /Users/x/Workspace/c-projects/blackjack/mai
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/erase_if_container.h:
+
+/Users/x/Workspace/c-projects/blackjack/includes/Player.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax.h:
 

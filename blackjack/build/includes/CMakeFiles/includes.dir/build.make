@@ -100,19 +100,35 @@ includes/CMakeFiles/includes.dir/Deck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/includes.dir/Deck.cpp.s"
 	cd /Users/x/Workspace/c-projects/blackjack/build/includes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/x/Workspace/c-projects/blackjack/includes/Deck.cpp -o CMakeFiles/includes.dir/Deck.cpp.s
 
+includes/CMakeFiles/includes.dir/Player.cpp.o: includes/CMakeFiles/includes.dir/flags.make
+includes/CMakeFiles/includes.dir/Player.cpp.o: /Users/x/Workspace/c-projects/blackjack/includes/Player.cpp
+includes/CMakeFiles/includes.dir/Player.cpp.o: includes/CMakeFiles/includes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object includes/CMakeFiles/includes.dir/Player.cpp.o"
+	cd /Users/x/Workspace/c-projects/blackjack/build/includes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT includes/CMakeFiles/includes.dir/Player.cpp.o -MF CMakeFiles/includes.dir/Player.cpp.o.d -o CMakeFiles/includes.dir/Player.cpp.o -c /Users/x/Workspace/c-projects/blackjack/includes/Player.cpp
+
+includes/CMakeFiles/includes.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/includes.dir/Player.cpp.i"
+	cd /Users/x/Workspace/c-projects/blackjack/build/includes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/x/Workspace/c-projects/blackjack/includes/Player.cpp > CMakeFiles/includes.dir/Player.cpp.i
+
+includes/CMakeFiles/includes.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/includes.dir/Player.cpp.s"
+	cd /Users/x/Workspace/c-projects/blackjack/build/includes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/x/Workspace/c-projects/blackjack/includes/Player.cpp -o CMakeFiles/includes.dir/Player.cpp.s
+
 # Object files for target includes
 includes_OBJECTS = \
 "CMakeFiles/includes.dir/Card.cpp.o" \
-"CMakeFiles/includes.dir/Deck.cpp.o"
+"CMakeFiles/includes.dir/Deck.cpp.o" \
+"CMakeFiles/includes.dir/Player.cpp.o"
 
 # External object files for target includes
 includes_EXTERNAL_OBJECTS =
 
 includes/libincludes.a: includes/CMakeFiles/includes.dir/Card.cpp.o
 includes/libincludes.a: includes/CMakeFiles/includes.dir/Deck.cpp.o
+includes/libincludes.a: includes/CMakeFiles/includes.dir/Player.cpp.o
 includes/libincludes.a: includes/CMakeFiles/includes.dir/build.make
 includes/libincludes.a: includes/CMakeFiles/includes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libincludes.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libincludes.a"
 	cd /Users/x/Workspace/c-projects/blackjack/build/includes && $(CMAKE_COMMAND) -P CMakeFiles/includes.dir/cmake_clean_target.cmake
 	cd /Users/x/Workspace/c-projects/blackjack/build/includes && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/includes.dir/link.txt --verbose=$(VERBOSE)
 
