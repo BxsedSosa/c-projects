@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/includes.dir/src/Dealer.cpp.o.d"
   "CMakeFiles/includes.dir/src/Deck.cpp.o"
   "CMakeFiles/includes.dir/src/Deck.cpp.o.d"
+  "CMakeFiles/includes.dir/src/Hand.cpp.o"
+  "CMakeFiles/includes.dir/src/Hand.cpp.o.d"
   "CMakeFiles/includes.dir/src/Player.cpp.o"
   "CMakeFiles/includes.dir/src/Player.cpp.o.d"
   "libincludes.a"

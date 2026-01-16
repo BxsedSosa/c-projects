@@ -24,6 +24,7 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
   /home/x/workspace/c-projects/blackjack/includes/Card.h \
   /home/x/workspace/c-projects/blackjack/includes/Dealer.h \
   /home/x/workspace/c-projects/blackjack/includes/Deck.h \
+  /home/x/workspace/c-projects/blackjack/includes/Hand.h \
   /home/x/workspace/c-projects/blackjack/includes/Player.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -358,6 +359,10 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 
 /usr/include/c++/15.2.1/bits/ostream.tcc:
 
+/usr/include/c++/15.2.1/system_error:
+
+/usr/include/c++/15.2.1/bits/new_allocator.h:
+
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
 /usr/include/bits/types/time_t.h:
@@ -365,10 +370,6 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 /usr/include/bits/types/__FILE.h:
 
 /usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/15.2.1/system_error:
-
-/usr/include/c++/15.2.1/bits/new_allocator.h:
 
 /usr/include/bits/setjmp.h:
 
@@ -381,10 +382,6 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/bits/long-double.h:
-
-/usr/include/c++/15.2.1/ostream:
-
-/usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/floatn-common.h:
 
@@ -410,12 +407,6 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/asm/posix_types.h:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/include/c++/15.2.1/bits/allocator.h:
-
 /usr/include/bits/byteswap.h:
 
 /usr/include/bits/locale.h:
@@ -426,7 +417,15 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 
 /usr/include/bits/types/clockid_t.h:
 
+/usr/include/asm/posix_types.h:
+
+/usr/include/asm/posix_types_64.h:
+
+/usr/include/c++/15.2.1/bits/allocator.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
+
+/usr/include/bits/types/__sigset_t.h:
 
 /usr/lib/libc.so.6:
 
@@ -441,6 +440,10 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 /usr/lib/crtn.o:
 
 /usr/lib/libgcc_s.so.1:
+
+/usr/include/c++/15.2.1/ostream:
+
+/usr/include/bits/libc-header-start.h:
 
 /usr/include/asm-generic/types.h:
 
@@ -470,17 +473,17 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /home/x/workspace/c-projects/blackjack/
 
 /usr/include/bits/types/error_t.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
-
-/usr/include/bits/types/FILE.h:
-
 /usr/include/stdc-predef.h:
-
-/usr/include/c++/15.2.1/bits/locale_classes.tcc:
 
 /usr/include/asm-generic/posix_types.h:
 
-/usr/include/bits/types/__sigset_t.h:
+/usr/include/c++/15.2.1/bits/locale_classes.tcc:
+
+/home/x/workspace/c-projects/blackjack/includes/Hand.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
+
+/usr/include/bits/types/FILE.h:
 
 /usr/include/c++/15.2.1/cstdio:
 

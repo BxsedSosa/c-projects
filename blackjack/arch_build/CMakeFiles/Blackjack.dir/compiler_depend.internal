@@ -26,6 +26,7 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o
  /home/x/workspace/c-projects/blackjack/includes/Card.h
  /home/x/workspace/c-projects/blackjack/includes/Dealer.h
  /home/x/workspace/c-projects/blackjack/includes/Deck.h
+ /home/x/workspace/c-projects/blackjack/includes/Hand.h
  /home/x/workspace/c-projects/blackjack/includes/Player.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
