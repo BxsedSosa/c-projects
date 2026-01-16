@@ -1,5 +1,5 @@
-#include "./includes/Dealer.h"
-#include "./includes/Player.h"
+#include "../includes/Dealer.h"
+#include "../includes/Player.h"
 #include <iostream>
 
 int main() {

@@ -1,4 +1,4 @@
-#include "Card.h"
+#include "../includes/Card.h"
 #include <string>
 
 Card::Card(std::string s, std::string v) {

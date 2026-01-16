@@ -1,5 +1,5 @@
-#include "Dealer.h"
-#include "Deck.h"
+#include "../includes/Dealer.h"
+#include "../includes/Deck.h"
 
 void Dealer::start_game(int decks) { this->game_deck.make_decks(decks); }
 void Dealer::show_shoe() { this->game_deck.display_deck(); }

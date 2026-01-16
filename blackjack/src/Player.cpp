@@ -1,5 +1,5 @@
-#include "Player.h"
-#include "Card.h"
+#include "../includes/Player.h"
+#include "../includes/Card.h"
 #include <vector>
 
 int Player::get_balance() { return balance; }
