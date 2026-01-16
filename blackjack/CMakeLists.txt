@@ -7,6 +7,7 @@ add_library(includes
   src/Player.cpp
   src/Dealer.cpp
   src/Hand.cpp
+  src/Game.cpp
 )
 
 target_include_directories(includes
