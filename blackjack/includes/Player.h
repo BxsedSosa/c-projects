@@ -1,15 +1,18 @@
 #pragma once
 
 #include "Card.h"
+#include "Hand.h"
 #include <vector>
 
 class Player {
 private:
-  std::vector<Card> hand;
+  Hand hand;
   int balance = 100;
 
 public:
   int get_balance();
   void set_balance(int amount);
-  std::vector<Card> get_hand();
+  void set_new_card(Card new_card);
+  Hand get_hand();
+  void display_hand();
 };

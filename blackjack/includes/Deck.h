@@ -14,4 +14,5 @@ public:
   std::vector<Card> shuffle_deck(std::vector<Card> deck);
   std::vector<Card> get_deck();
   int get_cards_left();
+  Card draw_top_card();
 };

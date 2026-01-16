@@ -12,5 +12,6 @@ private:
 public:
   void start_game(int decks);
   void show_shoe();
+  Card draw_card();
   int cards_left_in_deck();
 };

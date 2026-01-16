@@ -38,3 +38,10 @@ std::vector<Card> Deck::shuffle_deck(std::vector<Card> deck) {
 }
 
 std::vector<Card> Deck::get_deck() { return this->game_deck; }
+
+Card Deck::draw_top_card() {
+  int last_idx = game_deck.size() - 1;
+  Card card = game_deck[last_idx];
+  game_deck.pop_back();
+  return card;
+}

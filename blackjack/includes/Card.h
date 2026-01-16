@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+
 class Card {
 private:
   std::string suit;
