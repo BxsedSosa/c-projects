@@ -124,6 +124,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named includes
+
+# Build rule for target.
+includes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 includes
+.PHONY : includes
+
+# fast build rule for target.
+includes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/build
+.PHONY : includes/fast
+
+#=============================================================================
 # Target rules for targets named Blackjack
 
 # Build rule for target.
@@ -136,42 +149,125 @@ Blackjack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/build
 .PHONY : Blackjack/fast
 
-#=============================================================================
-# Target rules for targets named includes
-
-# Build rule for target.
-includes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 includes
-.PHONY : includes
-
-# fast build rule for target.
-includes/fast:
-	$(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/build
-.PHONY : includes/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
+src/Card.o: src/Card.cpp.o
+.PHONY : src/Card.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Card.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Card.cpp.o
+.PHONY : src/Card.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/Card.i: src/Card.cpp.i
+.PHONY : src/Card.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Card.cpp.i
+.PHONY : src/Card.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/Card.s: src/Card.cpp.s
+.PHONY : src/Card.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Card.cpp.s
+.PHONY : src/Card.cpp.s
+
+src/Dealer.o: src/Dealer.cpp.o
+.PHONY : src/Dealer.o
+
+# target to build an object file
+src/Dealer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Dealer.cpp.o
+.PHONY : src/Dealer.cpp.o
+
+src/Dealer.i: src/Dealer.cpp.i
+.PHONY : src/Dealer.i
+
+# target to preprocess a source file
+src/Dealer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Dealer.cpp.i
+.PHONY : src/Dealer.cpp.i
+
+src/Dealer.s: src/Dealer.cpp.s
+.PHONY : src/Dealer.s
+
+# target to generate assembly for a file
+src/Dealer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Dealer.cpp.s
+.PHONY : src/Dealer.cpp.s
+
+src/Deck.o: src/Deck.cpp.o
+.PHONY : src/Deck.o
+
+# target to build an object file
+src/Deck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Deck.cpp.o
+.PHONY : src/Deck.cpp.o
+
+src/Deck.i: src/Deck.cpp.i
+.PHONY : src/Deck.i
+
+# target to preprocess a source file
+src/Deck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Deck.cpp.i
+.PHONY : src/Deck.cpp.i
+
+src/Deck.s: src/Deck.cpp.s
+.PHONY : src/Deck.s
+
+# target to generate assembly for a file
+src/Deck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Deck.cpp.s
+.PHONY : src/Deck.cpp.s
+
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -184,9 +280,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Blackjack"
 	@echo "... includes"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Card.o"
+	@echo "... src/Card.i"
+	@echo "... src/Card.s"
+	@echo "... src/Dealer.o"
+	@echo "... src/Dealer.i"
+	@echo "... src/Dealer.s"
+	@echo "... src/Deck.o"
+	@echo "... src/Deck.i"
+	@echo "... src/Deck.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

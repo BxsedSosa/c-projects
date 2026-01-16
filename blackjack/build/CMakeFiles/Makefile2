@@ -63,48 +63,61 @@ CMAKE_BINARY_DIR = /Users/x/Workspace/c-projects/blackjack/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/includes.dir/all
 all: CMakeFiles/Blackjack.dir/all
-all: includes/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/includes.dir/codegen
 codegen: CMakeFiles/Blackjack.dir/codegen
-codegen: includes/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: includes/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/includes.dir/clean
 clean: CMakeFiles/Blackjack.dir/clean
-clean: includes/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory includes
+# Target rules for target CMakeFiles/includes.dir
 
-# Recursive "all" directory target.
-includes/all: includes/CMakeFiles/includes.dir/all
-.PHONY : includes/all
+# All Build rule for target.
+CMakeFiles/includes.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target includes"
+.PHONY : CMakeFiles/includes.dir/all
 
-# Recursive "codegen" directory target.
-includes/codegen: includes/CMakeFiles/includes.dir/codegen
-.PHONY : includes/codegen
+# Build rule for subdir invocation for target.
+CMakeFiles/includes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/x/Workspace/c-projects/blackjack/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/includes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/x/Workspace/c-projects/blackjack/build/CMakeFiles 0
+.PHONY : CMakeFiles/includes.dir/rule
 
-# Recursive "preinstall" directory target.
-includes/preinstall:
-.PHONY : includes/preinstall
+# Convenience name for target.
+includes: CMakeFiles/includes.dir/rule
+.PHONY : includes
 
-# Recursive "clean" directory target.
-includes/clean: includes/CMakeFiles/includes.dir/clean
-.PHONY : includes/clean
+# codegen rule for target.
+CMakeFiles/includes.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=3,4,5,6,7 "Finished codegen for target includes"
+.PHONY : CMakeFiles/includes.dir/codegen
+
+# clean rule for target.
+CMakeFiles/includes.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/clean
+.PHONY : CMakeFiles/includes.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Blackjack.dir
 
 # All Build rule for target.
-CMakeFiles/Blackjack.dir/all: includes/CMakeFiles/includes.dir/all
+CMakeFiles/Blackjack.dir/all: CMakeFiles/includes.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=1,2 "Built target Blackjack"
@@ -131,38 +144,6 @@ CMakeFiles/Blackjack.dir/codegen:
 CMakeFiles/Blackjack.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Blackjack.dir/build.make CMakeFiles/Blackjack.dir/clean
 .PHONY : CMakeFiles/Blackjack.dir/clean
-
-#=============================================================================
-# Target rules for target includes/CMakeFiles/includes.dir
-
-# All Build rule for target.
-includes/CMakeFiles/includes.dir/all:
-	$(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/depend
-	$(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target includes"
-.PHONY : includes/CMakeFiles/includes.dir/all
-
-# Build rule for subdir invocation for target.
-includes/CMakeFiles/includes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/x/Workspace/c-projects/blackjack/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 includes/CMakeFiles/includes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/x/Workspace/c-projects/blackjack/build/CMakeFiles 0
-.PHONY : includes/CMakeFiles/includes.dir/rule
-
-# Convenience name for target.
-includes: includes/CMakeFiles/includes.dir/rule
-.PHONY : includes
-
-# codegen rule for target.
-includes/CMakeFiles/includes.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles --progress-num=3,4,5,6,7 "Finished codegen for target includes"
-.PHONY : includes/CMakeFiles/includes.dir/codegen
-
-# clean rule for target.
-includes/CMakeFiles/includes.dir/clean:
-	$(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/clean
-.PHONY : includes/CMakeFiles/includes.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

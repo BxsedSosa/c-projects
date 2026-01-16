@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/x/Workspace/c-projects/blackjack/main.cpp" "CMakeFiles/Blackjack.dir/main.cpp.o" "gcc" "CMakeFiles/Blackjack.dir/main.cpp.o.d"
+  "/Users/x/Workspace/c-projects/blackjack/src/main.cpp" "CMakeFiles/Blackjack.dir/src/main.cpp.o" "gcc" "CMakeFiles/Blackjack.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
