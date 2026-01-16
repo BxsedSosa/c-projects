@@ -1,4 +1,4 @@
-add_library(includes ./Card.cpp ./Deck.cpp ./Player.cpp)
+add_library(includes ./Card.cpp ./Deck.cpp ./Player.cpp ./Dealer.cpp)
 
 target_include_directories(includes
   INTERFACE

@@ -161,6 +161,30 @@ Card.cpp.s:
 	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
+Dealer.o: Dealer.cpp.o
+.PHONY : Dealer.o
+
+# target to build an object file
+Dealer.cpp.o:
+	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Dealer.cpp.o
+.PHONY : Dealer.cpp.o
+
+Dealer.i: Dealer.cpp.i
+.PHONY : Dealer.i
+
+# target to preprocess a source file
+Dealer.cpp.i:
+	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Dealer.cpp.i
+.PHONY : Dealer.cpp.i
+
+Dealer.s: Dealer.cpp.s
+.PHONY : Dealer.s
+
+# target to generate assembly for a file
+Dealer.cpp.s:
+	cd /Users/x/Workspace/c-projects/blackjack/build && $(MAKE) $(MAKESILENT) -f includes/CMakeFiles/includes.dir/build.make includes/CMakeFiles/includes.dir/Dealer.cpp.s
+.PHONY : Dealer.cpp.s
+
 Deck.o: Deck.cpp.o
 .PHONY : Deck.o
 
@@ -222,6 +246,9 @@ help:
 	@echo "... Card.o"
 	@echo "... Card.i"
 	@echo "... Card.s"
+	@echo "... Dealer.o"
+	@echo "... Dealer.i"
+	@echo "... Dealer.s"
 	@echo "... Deck.o"
 	@echo "... Deck.i"
 	@echo "... Deck.s"

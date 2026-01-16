@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/x/Workspace/c-projects/blackjack/includes/Card.cpp" "includes/CMakeFiles/includes.dir/Card.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Card.cpp.o.d"
+  "/Users/x/Workspace/c-projects/blackjack/includes/Dealer.cpp" "includes/CMakeFiles/includes.dir/Dealer.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Dealer.cpp.o.d"
   "/Users/x/Workspace/c-projects/blackjack/includes/Deck.cpp" "includes/CMakeFiles/includes.dir/Deck.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Deck.cpp.o.d"
   "/Users/x/Workspace/c-projects/blackjack/includes/Player.cpp" "includes/CMakeFiles/includes.dir/Player.cpp.o" "gcc" "includes/CMakeFiles/includes.dir/Player.cpp.o.d"
   )

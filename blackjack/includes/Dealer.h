@@ -1,12 +1,16 @@
+#pragma once
+
 #include "Deck.h"
 #include "Player.h"
 #include <vector>
 
 class Dealer : public Player {
 private:
-  Deck active_deck;
+  Deck game_deck;
   int balance = 999999999;
 
 public:
-  Dealer(int decks);
+  void start_game(int decks);
+  void show_shoe();
+  int cards_left_in_deck();
 };

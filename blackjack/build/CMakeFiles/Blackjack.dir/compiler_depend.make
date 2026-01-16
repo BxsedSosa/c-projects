@@ -783,9 +783,12 @@ CMakeFiles/Blackjack.dir/main.cpp.o: /Users/x/Workspace/c-projects/blackjack/mai
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Card.h \
+  /Users/x/Workspace/c-projects/blackjack/includes/Dealer.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Deck.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Player.h
 
+
+/Users/x/Workspace/c-projects/blackjack/includes/Dealer.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 

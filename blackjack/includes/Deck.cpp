@@ -6,11 +6,21 @@
 #include <string>
 #include <vector>
 
-std::vector<char> suits = {'C', 'S', 'C', 'D'};
+std::vector<std::string> suits = {"♧", "♢", "♡", "♤"};
 std::vector<std::string> values = {"A", "2", "3",  "4", "5", "6", "7",
                                    "8", "9", "10", "J", "Q", "K"};
 
-Deck::Deck(int decks) {
+void Deck::display_deck() {
+  for (int i = 0; i < game_deck.size(); i++) {
+    std::cout << "Card - Suit: " << game_deck[i].get_suit()
+              << " Value: " << game_deck[i].get_value() << '\n';
+  }
+}
+
+int Deck::get_cards_left() { return game_deck.size(); }
+
+void Deck::make_decks(int decks) {
+  std::vector<Card> deck;
   for (int j = 0; j < decks; j++) {
     for (int i = 0; i < suits.size(); i++) {
       for (int k = 0; k < values.size(); k++) {
@@ -18,19 +28,13 @@ Deck::Deck(int decks) {
       }
     }
   }
-  Deck::shuffle_deck();
+  game_deck = shuffle_deck(deck);
 }
 
-void Deck::display_deck() {
-  for (int i = 0; i < deck.size(); i++) {
-    std::cout << "Card - Suit: " << deck[i].get_suit()
-              << " Value: " << deck[i].get_value() << '\n';
-  }
-}
-
-void Deck::shuffle_deck() {
+std::vector<Card> Deck::shuffle_deck(std::vector<Card> deck) {
   std::random_device seed;
   std::shuffle(deck.begin(), deck.end(), std::default_random_engine(seed()));
+  return deck;
 }
 
-int Deck::get_cards_left() { return deck.size(); }
+std::vector<Card> Deck::get_deck() { return this->game_deck; }

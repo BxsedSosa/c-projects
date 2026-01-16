@@ -6,11 +6,12 @@
 class Deck {
 
 private:
-  std::vector<Card> deck;
+  std::vector<Card> game_deck;
 
 public:
-  Deck(int decks);
+  void make_decks(int decks);
   void display_deck();
-  void shuffle_deck();
+  std::vector<Card> shuffle_deck(std::vector<Card> deck);
+  std::vector<Card> get_deck();
   int get_cards_left();
 };

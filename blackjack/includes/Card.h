@@ -3,11 +3,11 @@
 #include <string>
 class Card {
 private:
-  char suit;
+  std::string suit;
   std::string value;
 
 public:
-  Card(char s, std::string v);
-  char get_suit();
+  Card(std::string s, std::string v);
+  std::string get_suit();
   std::string get_value();
 };
