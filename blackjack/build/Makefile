@@ -221,6 +221,30 @@ src/Deck.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Deck.cpp.s
 .PHONY : src/Deck.cpp.s
 
+src/Display.o: src/Display.cpp.o
+.PHONY : src/Display.o
+
+# target to build an object file
+src/Display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Display.cpp.o
+.PHONY : src/Display.cpp.o
+
+src/Display.i: src/Display.cpp.i
+.PHONY : src/Display.i
+
+# target to preprocess a source file
+src/Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Display.cpp.i
+.PHONY : src/Display.cpp.i
+
+src/Display.s: src/Display.cpp.s
+.PHONY : src/Display.s
+
+# target to generate assembly for a file
+src/Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/includes.dir/build.make CMakeFiles/includes.dir/src/Display.cpp.s
+.PHONY : src/Display.cpp.s
+
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
@@ -337,6 +361,9 @@ help:
 	@echo "... src/Deck.o"
 	@echo "... src/Deck.i"
 	@echo "... src/Deck.s"
+	@echo "... src/Display.o"
+	@echo "... src/Display.i"
+	@echo "... src/Display.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

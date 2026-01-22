@@ -8,6 +8,6 @@ private:
   std::vector<Card> hand;
 
 public:
-  std::vector<Card> get_hand();
+  std::vector<Card> get_cards();
   void set_new_card(Card new_card);
 };

@@ -748,6 +748,7 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /Users/x/Workspace/c-projects/blackjack
   /Users/x/Workspace/c-projects/blackjack/includes/Card.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Dealer.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Deck.h \
+  /Users/x/Workspace/c-projects/blackjack/includes/Display.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Game.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Hand.h \
   /Users/x/Workspace/c-projects/blackjack/includes/Player.h
@@ -2094,6 +2095,8 @@ CMakeFiles/Blackjack.dir/src/main.cpp.o: /Users/x/Workspace/c-projects/blackjack
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
+
+/Users/x/Workspace/c-projects/blackjack/includes/Display.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h:
 

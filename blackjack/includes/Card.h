@@ -4,11 +4,11 @@
 
 class Card {
 private:
-  std::string suit;
+  char suit;
   std::string value;
 
 public:
-  Card(std::string s, std::string v);
-  std::string get_suit();
+  Card(char s, std::string v);
+  char get_suit();
   std::string get_value();
 };
