@@ -1,4 +1,0 @@
-/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles/includes.dir
-/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles/Blackjack.dir
-/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles/edit_cache.dir
-/Users/x/Workspace/c-projects/blackjack/build/CMakeFiles/rebuild_cache.dir
