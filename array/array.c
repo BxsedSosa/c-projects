@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define INITIAL_SIZE 2
-
 int main() {
   dynamicArray *arr;
   arrayInit(&arr);
@@ -11,6 +9,7 @@ int main() {
   pushItem(arr, 9);
   pushItem(arr, 10);
   pushItem(arr, 3);
+
   pushItem(arr, 55);
   pushItem(arr, 0);
 
@@ -19,11 +18,16 @@ int main() {
   deleteItem(arr, 2);
 
   printArray(arr);
-  printf("Size: %zu\nCapacity: %zu\n", arr->size, arr->capacity);
 
   popItem(arr);
   pushItem(arr, 55);
   printArray(arr);
+
+  insertItem(arr, 1, 99);
+  printArray(arr);
+
+  freeArray(arr);
+  return 0;
 }
 
 void arrayInit(dynamicArray **arr_ptr) {
@@ -47,11 +51,29 @@ void arrayInit(dynamicArray **arr_ptr) {
   *arr_ptr = container;
 }
 
+void freeArray(dynamicArray *arr) {
+  free(arr->array);
+  free(arr);
+}
+
 void pushItem(dynamicArray *arr, int item) {
   if (isArrayFull(arr)) {
     resizeArray(arr);
   }
   arr->array[arr->size++] = item;
+}
+
+void insertItem(dynamicArray *arr, int insertIdx, int value) {
+  if (isArrayFull(arr)) {
+    resizeArray(arr);
+  }
+
+  arr->size++;
+  for (int i = arr->size; i >= insertIdx; i--) {
+    arr->array[i + 1] = arr->array[i];
+  }
+
+  arr->array[insertIdx] = value;
 }
 
 void popItem(dynamicArray *arr) {
@@ -85,3 +107,9 @@ void printArray(dynamicArray *arr) {
     printf("Index: %3d\tValue: %3d\n", i, arr->array[i]);
   }
 }
+
+void printCapacity(dynamicArray *arr) {
+  printf("Array Capacity: %zu\n", arr->capacity);
+}
+
+void printSize(dynamicArray *arr) { printf("Array Size: %zu\n", arr->size); }
