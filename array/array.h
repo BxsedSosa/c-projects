@@ -1,10 +1,18 @@
-void add(char *);
-void replace(int, char *);
-void insert(int, char *);
-void pop();
-void erase(int);
-void printArray();
+#include <stdlib.h>
 
-char *get(int);
+typedef struct {
+  size_t size;
+  size_t capacity;
+  int *array;
+} dynamicArray;
 
-int getLength();
+void arrayInit(dynamicArray **);
+void pushItem(dynamicArray *, int);
+void popItem(dynamicArray *);
+void deleteItem(dynamicArray *, int);
+void printArray(dynamicArray *);
+void printCapacity(dynamicArray *);
+void printSize(dynamicArray *);
+
+int isArrayFull(dynamicArray *);
+void resizeArray(dynamicArray *);
